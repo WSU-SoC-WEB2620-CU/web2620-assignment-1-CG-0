@@ -1,1 +1,266 @@
 // Your styles go here
+
+/* Affects the overall page */
+html {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+*, 
+::before, 
+::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    background-color: #E79A9E;
+    color: white;
+}
+
+/* Header */
+header {
+    padding: 0px 15px 5px;
+}
+
+header .title {
+    font-size: 40px;
+}
+
+header .bars {
+    display: none;
+}
+
+header .searchBar {
+    font-size: 13px;
+    float:right;
+    margin-top: 10px;
+    background-color: #F4BCC7;
+    padding: 10px 360px 10px 20px;
+    border-radius: 22px;
+}
+
+/* Navigation Bar */
+nav {
+    text-align: center;
+    background-color: #F4BCC7;
+    padding: 10px 0px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+
+/* Main */
+main .firstArticle,
+main .secondArticle {
+    border-bottom: 2px solid #F4BCC7;
+    margin: 5px 15px 0px;
+    padding-bottom: 10px;
+}
+
+main .image {
+    float: left;
+    width: 30%;
+    margin-top: 10px;
+    
+}
+
+main img {
+    width: 100%;
+    height: 171px;
+}
+
+main .information {
+    float: left;
+    width: 67%;
+    margin-left: 25px;
+}
+
+main .mainTitle {
+    font-size: 22px;
+}
+
+main .firstLine {
+    font-size: 11px;
+}
+
+main .semicolon {
+    display: none;
+}
+
+main .date {
+    padding-left: 10px;
+}
+
+main .numberTwenty {
+    display: none;
+}
+
+main .plainText {
+    font-size: 12px;
+}
+
+main .mainButton {
+    font-size: 13px;
+}
+
+main .mainButtonText {
+    background-color: #F4BCC7;
+    padding: 5px 15px;
+    border-radius: 22px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Page Tab */
+.pageTab p {
+    text-align: center; 
+    font-size: 13px;
+}
+
+.pageTab .buttonLeft,
+.pageTab .buttonRight {
+    background-color: #F4BCC7;
+    padding: 5px 15px;
+    margin-top: -5px;
+    border-radius: 22px;
+}
+
+.pageTab .fraction {
+    padding: 0px 28px;
+}
+
+/* Footer */
+footer {
+    background-color: #F4BCC7;
+    font-size: 13px;
+    padding: 5px 15px 40px;
+}
+
+footer .middleLink {
+    padding: 0px 10px;
+}
+
+footer .last {
+    float: right;
+}
+
+/* On Smartphones */
+@media all and (max-width: 576px) {
+    /* Header */
+    header {
+        border-bottom: 2px solid #F4BCC7;
+        padding: 0px;
+    }
+
+    header .title {
+        padding-left: 3px;
+    }
+
+    header .bars {
+        display: inline;
+        float: right;
+        font-size: 35px;
+        background-color: #F4BCC7;
+        padding: 5px 10px;
+        margin: 3px 3px 0px 0px;
+        border-radius: 10px;
+    }
+
+    header .searchBar {
+        display: none;
+    }
+
+    /* Navigation Bar */
+    nav {
+        display: none;
+    }
+    
+    /* Main */
+    main .firstArticle,
+    main .secondArticle {
+        padding-bottom: 0px;
+    }
+
+    main .image {
+        width:100%;
+    }
+
+    main .information {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    main .firstLine {
+        font-size: 13px;
+    }
+
+    main .semicolon {
+        display: inline;
+    }
+
+    main .date {
+        padding-left: 0px;
+    }
+
+    main .numberEighteen {
+        display: none;
+    }
+
+    main .wordOn {
+        display: none;
+    }
+
+    main .numberTwenty {
+        display: inline;
+    }
+
+    main .plainText {
+        font-size: 11px;
+    }
+
+    main .secondPart {
+        display: none;
+    }
+
+    main .mainButton {
+        display: none;
+    }
+
+    /* Page Tab */
+    .pageTab {
+        padding: 3px 3px 0px;
+    }
+
+    .pageTab .buttonLeft {
+        float: left;
+    }
+
+    .pageTab .fraction {
+        padding: 0px;
+    }
+
+    .pageTab .buttonRight {
+        float: right;
+    }
+
+    /* Footer */
+    footer {
+        padding: 5px 0px;
+        text-align: center;
+    }
+
+    footer .links {
+        display: none;
+    }
+
+    footer .last {
+        float:none;
+    }
+}
